@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1>空气质量监测信息库</h1>
+    <form id="selDistrictForm">
+    按区域查询
+        <select name="districtId" id="selDistrictSel" title="区域查询">
+            <option value="-1">不限</option>
+        </select>
+        <input type="button" name="sel" value="查找"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="add.html">添加空气质量信息</a>
+    </form>
+    <br/>
+    <table>
+        <tr>
+            <th>序号</th>
+            <th>区域</th>
+            <th>监测时间</th>
+            <th>PM10</th>
+            <th>PM2.5</th>
+            <th>监测站</th>
+        </tr>
+    </table>
+    <p class="pageFoot"></p>
+</center>
+<script rel="script" type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script rel="script" type="text/javascript" src="js/initOptionSel.js"></script>
+<script rel="script" type="text/javascript" src="js/list.js"></script>
+</body>
+</html>
